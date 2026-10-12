@@ -48,16 +48,14 @@ for (const [size, name] of [
   await page.screenshot({ path: path.join(target, name), omitBackground: size === 32, clip: { x: 0, y: 0, width: size, height: size } });
 }
 
-// снимки эффектов: png из scripts/out/sheet → jpg шириной 1200
+// снимки эффектов: те же, что в листинге Chrome Web Store (store/screenshots, 1280×800 с курсором) → jpg шириной 1200
 mkdirSync(path.join(target, "shots"), { recursive: true });
-for (const slug of ["liquid", "shatter", "hex-float", "frost"]) {
-  const src = path.resolve("scripts/out/sheet", `${slug}.png`);
-  const { w, h } = (() => {
-    const b = readFileSync(src);
-    return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
-  })();
+for (const old of readdirSync(path.join(target, "shots"))) rmSync(path.join(target, "shots", old));
+for (const file of readdirSync(path.resolve("store/screenshots")).filter((f) => /^\d\d-.+\.jpg$/.test(f)).sort()) {
+  const slug = file.replace(/^\d\d-/, "").replace(/\.jpg$/, "");
+  const src = path.resolve("store/screenshots", file);
   const width = 1200;
-  const height = Math.round((h / w) * width);
+  const height = 750;
   await page.setViewport({ width, height, deviceScaleFactor: 1 });
   await page.setContent(
     `<!doctype html><body style="margin:0"><img src="${pathToFileURL(src).href}" style="display:block;width:${width}px;height:${height}px"></body>`,
