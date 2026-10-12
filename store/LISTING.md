@@ -112,7 +112,7 @@ Without the flag the panel opens and explains that the flag is needed; the effec
 
 Что пусто намеренно: Homepage URL, Support URL, Privacy policy URL – дашборд проверяет досягаемость ссылок при подаче, а `https://apps.aimindset.org/canvas-ui-anywhere/` оживёт после мержа lab-sites PR #168. Упоминание этой ссылки в конце описания оставлено, текст на досягаемость не проверяется.
 
-После мержа PR #168: вписать три URL (Homepage, Support, Privacy policy `…/privacy.html`), Save draft, Submit – правка листинга без новой версии пакета. На странице витрины добавить ссылку на Store.
+12.10 PR #168 слит, страница `https://apps.aimindset.org/canvas-ui-anywhere/` и `privacy.html` живы. По решению синка 12.10 установка с витрины идёт из репозитория `https://github.com/ai-mindset-org/canvasui-anywhere` (папка `dist`), zip не публикуется; на странице строка о статусе проверки Store. Пока подача на ревью, листинг не трогать (правка снимает подачу). После вердикта: вписать Homepage, Support, Privacy policy URL и вернуть строку со ссылкой в описание; на странице витрины заменить строку статуса на ссылку установки из Store.
 
 ## После публикации
 
