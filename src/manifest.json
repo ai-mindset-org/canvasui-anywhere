@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas UI Anywhere",
+  "version": "0.1.0",
+  "description": "The canvasui.dev playground on any website: pick an effect, tune it, watch it on the live page, copy the props for your agent.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Canvas UI Anywhere: open the panel (Ctrl+Shift+Y)"
+  },
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Show or hide the Canvas UI panel"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}

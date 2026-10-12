@@ -1,0 +1,17 @@
+{
+  "name": "canvasui-anywhere",
+  "version": "0.1.0",
+  "description": "Chrome extension: canvasui.dev playground over any site",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "min": "node scripts/build.mjs --min",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "keywords": [],
+  "author": "AI Mindset",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  },
+  "private": true
+}
