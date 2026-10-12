@@ -1,4 +1,4 @@
-// Ассеты страницы на apps.aimindset.org: social.png, favicon.svg/32/180, снимки эффектов в jpg, zip и SHA256SUMS.
+// Ассеты страницы на apps.aimindset.org: social.png, favicon.svg/32/180, снимки эффектов в jpg. Установка идёт из репозитория, zip не публикуется.
 // Запуск: node scripts/site-assets.mjs "<путь к lab-sites>/sites/apps/canvas-ui-anywhere"
 import { createRequire } from "node:module";
 import { execSync } from "node:child_process";
@@ -18,12 +18,9 @@ const models = JSON.parse(readFileSync(path.join(assets, "voxel-models.json"), "
 const favicon = globalThis.AIMVoxel.mark(models.canvas, { size: 32 });
 writeFileSync(path.join(target, "favicon.svg"), favicon);
 
-// zip и суммы из release/
-const release = path.resolve("release");
-const zipName = readdirSync(release).find((f) => f.endsWith(".zip"));
-for (const old of readdirSync(target).filter((f) => f.endsWith(".zip") && f !== zipName)) rmSync(path.join(target, old));
-copyFileSync(path.join(release, zipName), path.join(target, zipName));
-copyFileSync(path.join(release, "SHA256SUMS.txt"), path.join(target, "SHA256SUMS.txt"));
+// zip на витрину не кладётся (решение 12.10: установка из репозитория, как у Aside Tweaks); старые архивы убираем
+for (const old of readdirSync(target).filter((f) => f.endsWith(".zip") || f === "SHA256SUMS.txt")) rmSync(path.join(target, old));
+const zipName = "repository";
 
 const browser = await puppeteer.launch({
   executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe",
