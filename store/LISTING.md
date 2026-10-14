@@ -104,7 +104,11 @@ The effects rely on Chrome's HTML-in-canvas API (canvas.layoutsubtree / drawElem
 Without the flag the panel opens and explains that the flag is needed; the effect then draws without the page content. The extension makes no network requests; all code is bundled. Test account is not needed.
 ```
 
-## Состояние подачи – 2026-10-10
+## Состояние подачи – 2026-10-14
+
+**Опубликовано 14.10.2026:** `https://chromewebstore.google.com/detail/canvas-ui-anywhere/lgpkfmjhigjnjhkpjeoakdkakolajodl`. Осталось вписать в листинг Homepage, Support, Privacy policy URL и вернуть строку со ссылкой на страницу в конец описания (все адреса живые с 12.10).
+
+### История
 
 Подано 10.10.2026, в тот же день отказ Yellow Argon (keyword spam: перечисление 28 названий эффектов в описании). Описание переписано (v2 выше), повторная подача 12.10, автопубликация после одобрения включена. Item ID `lgpkfmjhigjnjhkpjeoakdkakolajodl`, публичная ссылка после одобрения `https://chromewebstore.google.com/detail/lgpkfmjhigjnjhkpjeoakdkakolajodl`.
 

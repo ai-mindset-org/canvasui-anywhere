@@ -1,6 +1,6 @@
 # Canvas UI Anywhere
 
-**EN.** A Chrome extension that runs the [canvasui.dev](https://canvasui.dev/playground) playground over any live page: pick one of the 28 effects, tune it with the playground's own sliders, copy the props as JSON for your agent. Install: enable `chrome://flags/#canvas-draw-element`, clone this repository, open `chrome://extensions`, turn on Developer mode, press Load unpacked and choose the `dist/` folder. Product page: [apps.aimindset.org/canvas-ui-anywhere](https://apps.aimindset.org/canvas-ui-anywhere/). Chrome Web Store listing is in review. MIT for the panel and wrapper; the engines keep canvas-ui's MIT + Commons Clause.
+**EN.** A Chrome extension that runs the [canvasui.dev](https://canvasui.dev/playground) playground over any live page: pick one of the 28 effects, tune it with the playground's own sliders, copy the props as JSON for your agent. Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/canvas-ui-anywhere/lgpkfmjhigjnjhkpjeoakdkakolajodl), then enable `chrome://flags/#canvas-draw-element` and relaunch. From source: clone this repository, open `chrome://extensions`, turn on Developer mode, press Load unpacked and choose the `dist/` folder. Product page: [apps.aimindset.org/canvas-ui-anywhere](https://apps.aimindset.org/canvas-ui-anywhere/). MIT for the panel and wrapper; the engines keep canvas-ui's MIT + Commons Clause.
 
 Chrome-расширение, которое повторяет плейграунд [canvasui.dev/playground](https://canvasui.dev/playground) поверх любого сайта: выбираешь эффект, крутишь те же настройки, что в плейграунде, и смотришь, как он выглядит на конкретной странице.
 
@@ -20,7 +20,9 @@ chrome://flags/#canvas-draw-element
 
 ## Установка
 
-Собранное расширение лежит в репозитории, папка `dist/`:
+Из стора: [Chrome Web Store](https://chromewebstore.google.com/detail/canvas-ui-anywhere/lgpkfmjhigjnjhkpjeoakdkakolajodl), кнопка Add to Chrome, обновления приходят сами.
+
+Из исходников: собранное расширение лежит в репозитории, папка `dist/`:
 
 ```bash
 git clone https://github.com/ai-mindset-org/canvasui-anywhere.git
@@ -101,7 +103,7 @@ node scripts/smoke.mjs https://example.com liquid --system-chrome
 
 ## Chrome Web Store
 
-Всё для кабинета разработчика лежит в `store/`: `LISTING.md` с текстами, обоснованиями разрешений, шагами подачи и журналом ревью, скриншоты и промо из `node scripts/store-assets.mjs`. В Store грузится `release/Canvas-UI-Anywhere-<версия>-webstore.zip`. Состояние: подано 12.10.2026, ревью идёт; до одобрения установка только распакованной папкой из репозитория. Политика приватности – `https://apps.aimindset.org/canvas-ui-anywhere/privacy.html` (в lab-sites рядом со страницей продукта).
+Всё для кабинета разработчика лежит в `store/`: `LISTING.md` с текстами, обоснованиями разрешений, шагами подачи и журналом ревью, скриншоты и промо из `node scripts/store-assets.mjs`. В Store грузится `release/Canvas-UI-Anywhere-<версия>-webstore.zip`. Опубликовано 14.10.2026: https://chromewebstore.google.com/detail/canvas-ui-anywhere/lgpkfmjhigjnjhkpjeoakdkakolajodl. Новая версия: поднять `version` в `src/manifest.json`, `npm run build`, загрузить `-webstore.zip` на вкладке Package, Submit; ревью листинга без смены кода проходит быстрее. Политика приватности – `https://apps.aimindset.org/canvas-ui-anywhere/privacy.html` (в lab-sites рядом со страницей продукта).
 
 ## Витрина apps.aimindset.org
 
