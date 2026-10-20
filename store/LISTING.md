@@ -26,9 +26,9 @@ The canvasui.dev playground on any website: pick an effect, tune it, watch it on
 
 **Category:** Developer Tools
 **Language:** English (United States)
-**Homepage URL:** https://apps.aimindset.org/canvas-ui-anywhere/
-**Support URL:** https://apps.aimindset.org/canvas-ui-anywhere/
-**Privacy policy URL:** https://apps.aimindset.org/canvas-ui-anywhere/privacy.html
+**Homepage URL:** [apps.aimindset.org/canvas-ui-anywhere](https://apps.aimindset.org/canvas-ui-anywhere/?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere)
+**Support URL:** [apps.aimindset.org/canvas-ui-anywhere](https://apps.aimindset.org/canvas-ui-anywhere/?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere)
+**Privacy policy URL:** [apps.aimindset.org/canvas-ui-anywhere/privacy.html](https://apps.aimindset.org/canvas-ui-anywhere/privacy.html?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere)
 
 **Detailed description** (v2, после отказа Yellow Argon 10.10: список 28 названий убран как keyword spam):
 
@@ -66,7 +66,7 @@ CREDITS
 Effects are the vanilla engines of canvas-ui by David Haz (github.com/DavidHDev/canvas-ui, MIT with Commons Clause), bundled unchanged. The panel, the page wrapper and this build are by AI Mindset. Free, no upsell.
 ```
 
-Строка «Product page, release notes and the unpacked build: https://apps.aimindset.org/canvas-ui-anywhere/» вернётся в конец описания вместе с Homepage/Support/Privacy URL после мержа PR #168.
+Строка «Product page, release notes and the unpacked build: [apps.aimindset.org/canvas-ui-anywhere/»](https://apps.aimindset.org/canvas-ui-anywhere/»?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere) вернётся в конец описания вместе с Homepage/Support/Privacy URL после мержа PR #168.
 
 **Screenshots** (по порядку): `screenshots/01-shatter.jpg`, `02-frost.jpg`, `03-decrypt-reveal.jpg`, `04-magnify.jpg`, `05-particle-reveal.jpg` – все 1280×800, сняты расширением поверх developer.chrome.com с нарисованным курсором (системный в снимок не попадает). Только явные эффекты: Liquid, Hex Float, VHS, Glitch, Bend, Peel, Asciify, Cloth, Grid в статике читаются слабо. Чужие бренды вроде Apple в скриншоты Store не берём.
 **Small promo tile:** `promo-440x280.png`. **Marquee:** `marquee-1400x560.png`. **Store icon:** `icon-128.png` (та же, что в manifest).
