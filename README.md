@@ -1,6 +1,10 @@
 # Canvas UI Anywhere
 
-**EN.** A Chrome extension that runs the [canvasui.dev](https://canvasui.dev/playground) playground over any live page: pick one of the 28 effects, tune it with the playground's own sliders, copy the props as JSON for your agent. Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/canvas-ui-anywhere/lgpkfmjhigjnjhkpjeoakdkakolajodl), then enable `chrome://flags/#canvas-draw-element` and relaunch. From source: clone this repository, open `chrome://extensions`, turn on Developer mode, press Load unpacked and choose the `dist/` folder. Product page: [apps.aimindset.org/canvas-ui-anywhere](https://apps.aimindset.org/canvas-ui-anywhere/). MIT for the panel and wrapper; the engines keep canvas-ui's MIT + Commons Clause.
+<!-- aim-public-links:start -->
+[Лабы AI Mindset](https://aimindset.org/?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere#learning) · [База знаний](https://base.aimindset.org/?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere)
+<!-- aim-public-links:end -->
+
+**EN.** A Chrome extension that runs the [canvasui.dev](https://canvasui.dev/playground) playground over any live page: pick one of the 28 effects, tune it with the playground's own sliders, copy the props as JSON for your agent. Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/canvas-ui-anywhere/lgpkfmjhigjnjhkpjeoakdkakolajodl), then enable `chrome://flags/#canvas-draw-element` and relaunch. From source: clone this repository, open `chrome://extensions`, turn on Developer mode, press Load unpacked and choose the `dist/` folder. Product page: [apps.aimindset.org/canvas-ui-anywhere](https://apps.aimindset.org/canvas-ui-anywhere/?utm_source=website&utm_medium=article&utm_campaign=start&utm_content=github-canvasui-anywhere). MIT for the panel and wrapper; the engines keep canvas-ui's MIT + Commons Clause.
 
 Chrome-расширение, которое повторяет плейграунд [canvasui.dev/playground](https://canvasui.dev/playground) поверх любого сайта: выбираешь эффект, крутишь те же настройки, что в плейграунде, и смотришь, как он выглядит на конкретной странице.
 

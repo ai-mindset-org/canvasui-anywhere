@@ -4,3 +4,4 @@ scripts/out/
 store/demo/
 store/demo-log*.txt
 sverka-design
+.worktrees/
